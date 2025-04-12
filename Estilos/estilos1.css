@@ -1,0 +1,94 @@
+/*Estilos de la cuadricula de imagenes*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f7ff;
+    color: #333;
+}
+.main-container {
+    display: flex;
+    flex: 1;
+}
+.breadcrumb {
+    width: 200px;
+    background-color: #d6e4f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #0b3d91;
+    padding: 10px;
+    background: #a9c4eb;
+    border-radius: 5px;
+    text-align: center;
+}
+.breadcrumb a:hover {
+    background: #82a4d9;
+    transform: scale(1.05);
+}
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0b3d91;
+    text-align: center;
+}
+.image-container {
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    background: #d6e4f0;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+.hotel {
+    text-align: center;
+}
+.hotel img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.hotel img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+.hotel p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0b3d91;
+}
+footer {
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+.main-container .breadcrumb .focoactivo
+{
+    background-color: #82a4d9;
+    transform: scale(1.05);
+
+}
